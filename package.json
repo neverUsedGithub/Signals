@@ -1,0 +1,25 @@
+{
+    "name": "@justcoding123/signals",
+    "version": "0.0.1",
+    "description": "A signals library.",
+    "main": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**/*"
+    ],
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "dev": "npx vite test",
+        "build": "npx tsup"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.5",
+        "vite": "^5.2.11"
+    }
+}
