@@ -3,7 +3,7 @@
     "version": "0.0.2",
     "description": "A signals library.",
     "main": "dist/index.mjs",
-    "types": "dist/index.d.ts",
+    "types": "dist/index.d.mts",
     "homepage": "https://github.com/neverUsedGithub/Signals",
     "repository": {
         "type": "git",
