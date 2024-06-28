@@ -117,4 +117,15 @@ export namespace Signal {
         const sig = new Signal.Computed(value);
         return () => sig.get();
     }
+
+    export function untracked<T>(callback: () => T): T {
+        const lastSignal = currentSignal;
+        let value: T;
+
+        currentSignal = null;
+        value = callback();
+        currentSignal = lastSignal;
+
+        return value;
+    }
 }

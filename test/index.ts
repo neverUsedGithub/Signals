@@ -15,4 +15,14 @@ Signal.createEffect(() => {
     display2.textContent = `Count doubled is: ${doubled()}`;
 });
 
+Signal.createMemo(() => {
+    const signal = Signal.untracked(() => {
+        const test = new Signal.State(0);
+        test.set(test.get() + 1);
+        return test;
+    });
+
+    console.log(signal);
+});
+
 button.addEventListener("click", () => setCount(count() + 1));
